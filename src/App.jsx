@@ -30,6 +30,7 @@ function App() {
      <Enemy hp={state.enemyHp} name={state.enemyName} sprite={state.enemySprite} type={state.enemyType} />
      <HPBar hp={state.enemyHp} />
      <button onClick={attack} disabled={state.isGameOver}>Attack</button>
+     {state.isGameOver && <h2>GAME OVER</h2>}
 
      <Log logs={state.logs} />
 

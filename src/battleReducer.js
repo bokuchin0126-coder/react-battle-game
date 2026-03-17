@@ -64,6 +64,7 @@ export function battleReducer(state, action) {
 
             enemyHp: Math.max(0, state.enemyHp - playerDamage),
             playerHp: Math.max(0, state.playerHp - enemyDamage),
+            isGameOver,
 
             logs: [
                 `Player attack! ${playerDamage}`,
